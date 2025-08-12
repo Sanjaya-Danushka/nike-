@@ -1,35 +1,23 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
-
-function App() {
-  const [count, setCount] = useState(0)
-
+const App = () => {
   return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
-}
+    <main className="relative">
+      Nav
+      <section className="x1:sm:px-16 px-8 sm:py-24 py-12 wide:sm:pr-16 pr-8 sm:pb-24 pb-12">
+        Hero
+      </section>
+      <section className="sm:px-16 px-8 sm:py-24 py-12">
+        PopularProducts
+      </section>
+      <section className="sm:px-16 px-8 sm:py-24 py-12">Superquality</section>
+      <section className="sm:px-16 px-8 py-10">Services</section>
+      <section className="sm:px-16 px-8 sm:py-24 py-12 bg-blue-50">SpecialOffers</section>
+      <section className="sm:px-16 px-8 sm:py-24 py-12">
+        CustomerReviews
+      </section>
+      <section className="sm:px-16 px-8 sm:py-32 py-16 w-full">Subscribe</section>
+      <section className="sm:px-16 px-8 sm:pt-24 pt-12 bg-black pb-8">Footer</section>
+    </main>
+  );
+};
 
-export default App
+export default App;
